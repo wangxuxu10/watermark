@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_load_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载图片" />
+
+    <EditText
+        android:id="@+id/edt_water_mark_input"
+        android:layout_below="@id/btn_load_image"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_insert_text"
+        android:layout_below="@id/btn_load_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/edt_water_mark_input"
+        android:text="插入" />
+
+    <Button
+        android:id="@+id/btn_save_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_water_mark_input"
+        android:text="保存" />
+
+    <ImageView
+        android:id="@+id/img_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_save_image" />
+
+
+</RelativeLayout>
